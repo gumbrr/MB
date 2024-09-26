@@ -19,9 +19,28 @@ CFG::CFG(const string& file) {
     json j;
     input >> j;
 
+    for(const auto& elem : j["Variables"]) {
+        nonTerminals.push_back(elem.get<std::string>());
+    }
 
+    for(const auto& elem : j["Terminals"]) {
+        terminals.push_back(elem.get<std::string>());
+    }
+
+    for(const auto& elem : j["Productions"]) {
+        string head = elem["head"];
+        string body;
+
+        for(const auto& elem2 : elem["body"]) {
+            body += elem2.get<std::string>();
+            if (elem2 != elem["body"].back()) {
+                body += " ";
+            }
+        }
+        productionRules[head].push_back(body);
+    }
+    startSymbol = j["Start"];
 }
-
 
 void CFG::print() {
     cout << "V = {";
@@ -52,5 +71,3 @@ void CFG::print() {
 
     cout << "S = " << startSymbol << "\n";
 }
-
-

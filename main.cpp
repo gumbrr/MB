@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    CFG cfg;
+    CFG cfg("testfile.json");
     cfg.print();
     return 0;
 }
