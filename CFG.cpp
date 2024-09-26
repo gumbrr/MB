@@ -22,10 +22,12 @@ CFG::CFG(const string& file) {
     for(const auto& elem : j["Variables"]) {
         nonTerminals.push_back(elem.get<std::string>());
     }
+    sort(nonTerminals.begin(), nonTerminals.end());
 
     for(const auto& elem : j["Terminals"]) {
         terminals.push_back(elem.get<std::string>());
     }
+    sort(terminals.begin(), terminals.end());
 
     for(const auto& elem : j["Productions"]) {
         string head = elem["head"];
@@ -38,6 +40,7 @@ CFG::CFG(const string& file) {
             }
         }
         productionRules[head].push_back(body);
+        sort(productionRules[head].begin(), productionRules[head].end());
     }
     startSymbol = j["Start"];
 }
