@@ -33,9 +33,9 @@ CFG::CFG(const string& file) {
         string head = elem["head"];
         string body;
 
-        for(const auto& elem2 : elem["body"]) {
-            body += elem2.get<std::string>();
-            if (elem2 != elem["body"].back()) {
+        for(size_t i = 0; i < elem["body"].size(); ++i) {
+            body += elem["body"][i].get<std::string>();
+            if (i != elem["body"].size() - 1) {
                 body += " ";
             }
         }
