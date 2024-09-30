@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    CFG cfg("testfiles\\input1.json");
+    CFG cfg("testfiles\\input2.json");
     cfg.print();
     return 0;
 }

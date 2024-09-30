@@ -30,7 +30,7 @@ CFG::CFG(const string& file) {
     sort(terminals.begin(), terminals.end());
 
     for(const auto& elem : j["Productions"]) {
-        string head = elem["head"];
+        auto head = elem["head"].get<std::string>();
         string body;
 
         for(size_t i = 0; i < elem["body"].size(); ++i) {
