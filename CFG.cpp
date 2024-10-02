@@ -4,16 +4,6 @@
 
 #include "CFG.h"
 
-CFG::CFG() {
-    nonTerminals = {"BINDIGIT", "S"};
-    terminals = {"0", "1", "a", "b"};
-    productionRules = {
-            {"BINDIGIT", {"0", "1"}},
-            {"S", {"", "a S b BINDIGIT"}},
-    };
-    startSymbol = "S";
-}
-
 CFG::CFG(const string& file) {
     ifstream input(file);
     json j;
@@ -65,7 +55,7 @@ void CFG::print() const {
     cout << "}\n";
 
     cout << "P = {\n";
-    for (auto & productionRule : productionRules) {
+    for (const auto & productionRule : productionRules) {
         for (const string& rule: productionRule.second) {
             cout << "    " << productionRule.first << " -> `" << rule << "`\n";
         }

@@ -21,7 +21,7 @@ private:
     map<string, vector<string>> productionRules;
     string startSymbol;
 public:
-    CFG();
+    CFG() = default;
     explicit CFG(const string& file);
     void print() const;
 };

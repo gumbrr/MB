@@ -20,7 +20,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a45f9ec-ce93-4939-9f0c-4bc0b255b712" name="Changes" comment="lil problem">
+    <list default="true" id="3a45f9ec-ce93-4939-9f0c-4bc0b255b712" name="Changes" comment="iterator to loop">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFG.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFG.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFG.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFG.h" afterDir="false" />
@@ -123,7 +123,7 @@
       <workItem from="1727733295064" duration="1786000" />
       <workItem from="1727735628179" duration="21000" />
       <workItem from="1727877098152" duration="81000" />
-      <workItem from="1727884713547" duration="937000" />
+      <workItem from="1727884713547" duration="2470000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -189,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727735206495</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="iterator to loop">
+      <option name="closed" value="true" />
+      <created>1727885749140</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1727885749140</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +214,7 @@
     <MESSAGE value="finished json constructor" />
     <MESSAGE value="fixed whitespace problem" />
     <MESSAGE value="lil problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="lil problem" />
+    <MESSAGE value="iterator to loop" />
+    <option name="LAST_COMMIT_MESSAGE" value="iterator to loop" />
   </component>
 </project>
