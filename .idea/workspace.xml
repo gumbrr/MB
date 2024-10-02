@@ -20,14 +20,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a45f9ec-ce93-4939-9f0c-4bc0b255b712" name="Changes" comment="fixed whitespace problem">
+    <list default="true" id="3a45f9ec-ce93-4939-9f0c-4bc0b255b712" name="Changes" comment="lil problem">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFG.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFG.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFG.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFG.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cfg.dir/CFG.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cfg.dir/CFG.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cfg.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cfg.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cfg.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cfg.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +120,10 @@
       <workItem from="1727555247128" duration="12000" />
       <workItem from="1727571134810" duration="274000" />
       <workItem from="1727641239388" duration="3044000" />
-      <workItem from="1727733295064" duration="1710000" />
+      <workItem from="1727733295064" duration="1786000" />
+      <workItem from="1727735628179" duration="21000" />
+      <workItem from="1727877098152" duration="81000" />
+      <workItem from="1727884713547" duration="937000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -176,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727644937484</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="lil problem">
+      <option name="closed" value="true" />
+      <created>1727735206495</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1727735206495</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +205,7 @@
     <MESSAGE value="json constructor" />
     <MESSAGE value="finished json constructor" />
     <MESSAGE value="fixed whitespace problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed whitespace problem" />
+    <MESSAGE value="lil problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="lil problem" />
   </component>
 </project>

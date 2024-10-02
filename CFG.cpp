@@ -45,29 +45,29 @@ CFG::CFG(const string& file) {
     startSymbol = j["Start"];
 }
 
-void CFG::print() {
+void CFG::print() const {
     cout << "V = {";
-    for (auto it = nonTerminals.begin(); it != nonTerminals.end(); it++) {
-        cout << *it;
-        if (it != --nonTerminals.end()) {
+    for (int i = 0; i < nonTerminals.size(); i++) {
+        cout << nonTerminals[i];
+        if (i != nonTerminals.size() - 1) {
             cout << ", ";
         }
     }
     cout << "}\n";
 
     cout << "T = {";
-    for (auto it = terminals.begin(); it != terminals.end(); it++) {
-        cout << *it;
-        if (it != --terminals.end()) {
+    for (int i = 0; i < terminals.size(); i++) {
+        cout << terminals[i];
+        if (i != terminals.size() - 1) {
             cout << ", ";
         }
     }
     cout << "}\n";
 
     cout << "P = {\n";
-    for (auto it = productionRules.begin(); it != productionRules.end(); it++) {
-        for (auto it2 = it->second.begin(); it2 != it->second.end(); it2++) {
-            cout << "    " << it->first << " -> `" << *it2 << "`\n";
+    for (auto & productionRule : productionRules) {
+        for (const string& rule: productionRule.second) {
+            cout << "    " << productionRule.first << " -> `" << rule << "`\n";
         }
     }
     cout << "}\n";

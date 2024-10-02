@@ -22,8 +22,8 @@ private:
     string startSymbol;
 public:
     CFG();
-    CFG(const string& file);
-    void print();
+    explicit CFG(const string& file);
+    void print() const;
 };
 
 
