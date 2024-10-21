@@ -1,10 +1,11 @@
 #include <iostream>
 #include "CFG.h"
+#include "PDA.h"
 
 using namespace std;
 
 int main() {
-    CFG cfg("testfiles\\input2.json");
-    cfg.print();
+    PDA pda("testfiles//input-pda2cfg1.json");
+    //pda.toCFG().print();
     return 0;
 }

@@ -15,16 +15,16 @@ CFG::CFG(const string& file) {
     sort(nonTerminals.begin(), nonTerminals.end());
 
     for(const auto& elem : j["Terminals"]) {
-        terminals.push_back(elem.get<std::string>());
+        terminals.push_back(elem.get<string>());
     }
     sort(terminals.begin(), terminals.end());
 
     for(const auto& elem : j["Productions"]) {
-        auto head = elem["head"].get<std::string>();
+        auto head = elem["head"].get<string>();
         string body;
 
         for(size_t i = 0; i < elem["body"].size(); ++i) {
-            body += elem["body"][i].get<std::string>();
+            body += elem["body"][i].get<string>();
             if (i != elem["body"].size() - 1) {
                 body += " ";
             }

@@ -11,6 +11,7 @@
 #include <iostream>
 #include "json.hpp"
 #include <fstream>
+
 using namespace std;
 using json = nlohmann::json;
 
@@ -20,6 +21,7 @@ private:
     vector<string> nonTerminals;
     map<string, vector<string>> productionRules;
     string startSymbol;
+
 public:
     CFG() = default;
     explicit CFG(const string& file);
